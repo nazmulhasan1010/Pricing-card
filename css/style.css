@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat-Regular';
+    background-color: rgb(105, 104, 104);
+}
+
+.main-content {
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    height: 370px;
+    width: 240px;
+    margin-right: 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px #333;
+    overflow: hidden;
+    transition: .3s;
+}
+
+.card-active {
+    height: 400px;
+    width: 250px;
+    z-index: 999;
+}
+
+.card-1 {
+    margin-right: -40px;
+}
+
+.card-3 {
+    margin-left: -40px;
+}
+
+.card .card-top {
+    height: 35%;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 15px 15px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .card-top p:nth-child(1) {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.card-1 .card-top p:nth-child(1) {
+    color: #4aee7b;
+}
+
+.card-2 .card-top p:nth-child(1) {
+    color: #7D1FCB;
+}
+
+.card-3 .card-top p:nth-child(1) {
+    color: #fc6b7f;
+}
+
+.card .card-top p:nth-child(2) {
+    font-size: .8rem;
+    font-weight: bold;
+    color: rgb(134, 134, 134);
+}
+
+.card .card-bottom {
+    height: 65%;
+    width: 100%;
+    border-radius: 0 0 15px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.card-1 .card-bottom {
+    background: linear-gradient(to top left, #2fb658, #bae074);
+}
+
+.card-2 .card-bottom {
+    background: linear-gradient(to top left, #470081, #eb6ce4);
+}
+
+.card-3 .card-bottom {
+    background: linear-gradient(to top left, #f75f6a, #e481bc);
+}
+
+.card .card-bottom .circle-1 {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    left: -60px;
+    top: 20px;
+    border-radius: 50%;
+    opacity: .3;
+}
+
+.card .card-bottom .circle-2 {
+    height: 90px;
+    width: 90px;
+    position: absolute;
+    bottom: 50px;
+    right: -30px;
+    border-radius: 50%;
+    opacity: .5;
+}
+
+.card-1 .card-bottom .circle-1 {
+    background: linear-gradient(to bottom right, #036320, #abeb35);
+}
+
+.card-2 .card-bottom .circle-1 {
+    background: linear-gradient(to bottom right, #3a0364, #ab19adb6);
+}
+
+.card-3 .card-bottom .circle-1 {
+    background: linear-gradient(to bottom right, #e72a37, #e481bc);
+}
+
+.card-1 .card-bottom .circle-2 {
+    background-color: #12993aa2;
+}
+
+.card-2 .card-bottom .circle-2 {
+    background-color: #6a03a1;
+}
+
+.card-3 .card-bottom .circle-2 {
+    background-color: #b65d63c9;
+}
+
+.card .card-bottom .status {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.5rem;
+    z-index: 1;
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.card .card-bottom .info {
+    margin-bottom: 20px;
+    z-index: 2;
+}
+
+.card .card-bottom .info p .fas {
+    font-size: 12px;
+    width: 20px;
+}
+
+.card .card-bottom .info p {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #fff;
+}
+
+.card .card-bottom button {
+    padding: 7px 45px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    z-index: 3;
+}
+
+.card-1 .card-bottom button {
+    color: #3ae06c;
+    box-shadow: 2px 5px 20px #1b9c42;
+}
+
+.card-2 .card-bottom button {
+    color: #7D1FCB;
+    box-shadow: 2px 5px 20px #b171e6;
+}
+
+.card-3 .card-bottom button {
+    color: #fc6b7f;
+    box-shadow: 2px 5px 20px #f33b54;
+}
+
+.card-1 .card-bottom button:hover {
+    color: #fff;
+    background-color: #1b9c42;
+}
+
+.card-2 .card-bottom button:hover {
+    color: #fff;
+    background-color: #6a03a1;
+}
+
+.card-3 .card-bottom button:hover {
+    color: #fff;
+    background-color: #f33b54;
+}
+
+.card .card-bottom button:focus {
+    background-color: #fff;
+    box-shadow: 2px 3px 20px #fff;
+}
+
+.card-1 .card-bottom button:focus {
+    color: #3ae06c;
+}
+
+.card-2 .card-bottom button:focus {
+    color: #7D1FCB;
+}
+
+.card-3 .card-bottom button:focus {
+    color: #fc6b7f;
+}
